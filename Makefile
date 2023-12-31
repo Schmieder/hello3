@@ -6,3 +6,5 @@ build:
 
 run:
 	go run main.go
+
+all: hello build
