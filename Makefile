@@ -19,7 +19,7 @@ format:
 	gofmt -w main.go
 
 lint:
-	golint main.go
+	golangci-lint run
 
 vet:
 	go vet main.go
