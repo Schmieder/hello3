@@ -1,3 +1,5 @@
+BINARY_NAME=./bin/main.exe
+
 hello:
 	echo "Hello"
 
@@ -8,3 +10,7 @@ run:
 	go run main.go
 
 all: hello build
+
+clean:
+	go clean
+	rmdir /s /q bin
