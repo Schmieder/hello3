@@ -18,8 +18,8 @@ clean:
 format:
 	gofmt -w main.go
 
-lint:
-	golangci-lint run
+tidy:
+	go mod tidy -v
 
 vet:
 	go vet main.go
